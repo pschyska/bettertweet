@@ -15,6 +15,10 @@ angular.module('bettertweetApp', ['betterplaceServices'])
         templateUrl: 'views/project_details.html',
         controller: 'ProjectDetailsCtrl'
       })
+      .when('/donation-success', {
+        templateUrl: 'views/tweet.html',
+        controller: 'TweetCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
